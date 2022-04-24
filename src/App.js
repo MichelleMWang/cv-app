@@ -1,18 +1,31 @@
+import React from "react";
+import Work from "./Work.js"; 
+
+
 /*hierarchy: 
   App 
-    profile
-    work  
-      personal statement
-      experience
-      education
-      skills
-
+    general
+      nameS
+      email
+      phone
+    education
+      school
+      degree
+      date
+    work
+      company
+      position
+      tasks
+      date
 */
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+        <Work> </Work> 
+      </div>
+    ); 
+  }
 }
 
 export default App;
